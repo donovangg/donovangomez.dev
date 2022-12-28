@@ -31,10 +31,12 @@ const projects = [
 ---
 
 <Layout>
-  <main>
+  <main class="bg-slate-300">
     <h1>Projects</h1>
-    <div>
-      {projects.map((project) => <ProjectCard />)}
+    <div class="border-2 border-green-700 w-5/6 mx-auto">
+      <div class="flex flex-col gap-4">
+        {projects.map((project) => <ProjectCard />)}
+      </div>
     </div>
   </main>
 </Layout>
