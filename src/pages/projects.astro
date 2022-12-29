@@ -35,7 +35,17 @@ const projects = [
     <h1>Projects</h1>
     <div class="border-2 border-green-700 w-5/6 mx-auto">
       <div class="flex flex-col gap-4">
-        {projects.map((project) => <ProjectCard />)}
+        {
+          projects.map((project) => (
+            <ProjectCard
+              title={project.title}
+              link={project.link}
+              stack={project.stack}
+              github={project.github}
+              imgSrc={project.imgSrc}
+            />
+          ))
+        }
       </div>
     </div>
   </main>
