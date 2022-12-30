@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Wrapper from "../components/Wrapper.astro";
 export interface Props {
   title?: string;
 }
@@ -22,6 +23,7 @@ const { title = "Biscuits Hops on Commentary" } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Wrapper />
     <Header />
     <slot />
   </body>
