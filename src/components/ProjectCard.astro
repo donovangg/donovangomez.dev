@@ -3,14 +3,14 @@ const { title, link, github, imgSrc, stack } = Astro.props;
 ---
 
 <div
-  class="border-2 border-red-600 bg-white rounded-lg lg:bg-red-400 xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
+  class="text-stone-100 bg-zinc-800 rounded-lg xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
 >
-  <div class="border-4 xl:col-span-4 border-purple-800">
+  <div class="xl:col-span-4">
     <img src={imgSrc} class="w-full" />
   </div>
-  <div class="flex flex-col border-4 xl:col-span-2 border-blue-400 gap-2 p-4">
-    <h2 class="text-4xl">{title}</h2>
-    <p class="text-2xl">{stack}</p>
+  <div class="flex flex-col xl:col-span-2 gap-2 p-4">
+    <h2 class="text-4xl text-stone-300">{title}</h2>
+    <p class="text-2xl text-stone-300">{stack}</p>
     <div>
       <a
         href={github}
