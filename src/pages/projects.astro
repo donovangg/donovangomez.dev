@@ -31,14 +31,14 @@ const projects = [
 ---
 
 <Layout>
-  <main class="bg-zinc-900 w-11/12 mx-auto relative z-10">
+  <main class="bg-zinc-900 w-11/12 mx-auto min-h-screen relative z-10">
     <h1
       class="text-center text-6xl py-24 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent font-black"
     >
       Projects
     </h1>
-    <div class="border-2 border-green-700 w-5/6 mx-auto">
-      <div class="flex flex-wrap justify-center gap-4">
+    <div class="border-2 border-green-700 min-h-screen w-5/6 mx-auto">
+      <div class="flex flex-wrap gap-4">
         {
           projects.map((project) => (
             <ProjectCard
