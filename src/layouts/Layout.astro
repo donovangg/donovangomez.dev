@@ -25,6 +25,20 @@ const { title = "Biscuits Hops on Commentary" } = Astro.props;
   <body class="overflow-x-hidden">
     <Wrapper />
     <Header />
-    <slot />
+    <main id="swup" class="transition-fade">
+      <slot />
+    </main>
+    <script src="../js/script.js"></script>
   </body>
 </html>
+
+<style>
+  .transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+</style>

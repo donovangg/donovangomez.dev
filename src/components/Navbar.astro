@@ -5,23 +5,29 @@
   class="relative flex border-2 mx-auto w-5/6 text-sm font-medium text-stone-50"
 >
   <ul
-    class="w-full border-2 border-red-300 mx-auto grid grid-cols-4 md:w-full lg:w-full"
+    class="w-full border-2 relative items-center border-orange-600 mx-auto grid grid-cols-4 md:w-full lg:w-full"
   >
     <ul class="hidden md:flex md:gap-6 md:justify-start md:items-center">
-      <li class="justify-center md:flex">
-        <span>uwu</span>
+      <li class="md:justify-center md:items-center md:flex">
+        <a href="/">
+          <img
+            src="/assets/logo.webp"
+            class="border-2 bg-cover items-center justify-center"
+            width={60}
+          />
+        </a>
       </li>
     </ul>
     <ul
-      class="flex w-screen justify-center md:flex md:col-span-3 md:justify-end md:w-full gap-6"
+      class="flex border-2 w-[22.55rem] justify-center border-blue-400 md:flex md:col-span-3 md:justify-end md:w-full gap-6"
     >
       <li>
-        <a class="relative block px-3 py-2 transition" href="/projects"
+        <a class="relative text-xl block px-3 py-2 transition" href="/projects"
           >Projects</a
         >
       </li>
       <li
-        class="flex justify-center items-center hover:text-violet-500 transition duration-75"
+        class="flex justify-center text-xl items-center hover:text-violet-500 transition duration-75"
       >
         <a href="/about">About</a>
       </li>

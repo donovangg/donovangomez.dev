@@ -3,7 +3,7 @@ const { title, link, github, imgSrc, stack } = Astro.props;
 ---
 
 <div
-  class="border-2 border-red-600 bg-zinc-800 rounded-lg flex flex-col max-w-sm xl:bg-red-400 xl:max-w-2xl xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
+  class="shadow-xl bg-zinc-800 rounded-md flex flex-col max-w-sm xl:bg-zinc-800 xl:max-w-5xl xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
 >
   <div class="xl:col-span-4">
     <img src={imgSrc} class="w-full" />
@@ -11,22 +11,22 @@ const { title, link, github, imgSrc, stack } = Astro.props;
   <div class="flex flex-col xl:col-span-2 gap-2 p-4">
     <h2 class="text-4xl text-stone-300">{title}</h2>
     <p class="text-2xl text-stone-300">{stack}</p>
-    <div class="border-2 flex">
+    <div class="border-2 flex gap-3">
       <a
         href={github}
-        class="inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Repo
       </a>
       <a
         href={link}
-        class="bg-indigo-500 text-white hover:bg-indigo-400 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Live
       </a>
       <a
         href="/contact"
-        class="bg-indigo-500 text-white hover:bg-indigo-400 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Details
       </a>
