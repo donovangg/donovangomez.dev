@@ -3,15 +3,19 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="bg-zinc-900 w-11/12 mx-auto min-h-screen relative z-10">
+  <main
+    class="bg-zinc-900 w-11/12 mx-auto min-h-screen relative z-10 selection:bg-pink-600"
+  >
     <section class="min-h-screen pl-4 py-14 lg:flex lg:flex-row-reverse">
       <div
         class="flex-2 grow-1 max-w-xs px-2.5 lg:max-w-none py-12 w-11/12 mx-auto"
       >
-        <img
-          class="rounded-md rotate-3 max-w-full transition ease-in hover:rotate-0 mx-auto h-auto lg:w-4/6"
-          src="/assets/me.jpg"
-        />
+        <div>
+          <img
+            class="rounded-md rotate-3 border-2 border-purple-500 max-w-full transition ease-in hover:rotate-0 mx-auto h-auto lg:w-4/6"
+            src="/assets/me.jpg"
+          />
+        </div>
         <ul
           class="hidden lg:flex flex-col justify-center w-4/6 mx-auto gap-4 my-6"
         >
