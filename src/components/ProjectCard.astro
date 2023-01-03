@@ -3,30 +3,36 @@ const { title, link, github, imgSrc, stack } = Astro.props;
 ---
 
 <div
-  class="shadow-xl bg-zinc-800 rounded-md flex flex-col max-w-sm xl:bg-zinc-800 xl:max-w-5xl xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
+  class="shadow-xl relative bg-zinc-800 rounded-md group flex flex-col max-w-sm xl:bg-zinc-800 xl:max-w-5xl xl:grid xl:grid-cols-6 xl:justify-center xl:items-center"
 >
-  <div class="xl:col-span-4">
+  <div
+    class="absolute -inset-0.5 hover:bg-gradient-to-r from-pink-600 to bg-violet-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-200"
+  >
+  </div>
+  <div class="relative xl:col-span-4">
     <img src={imgSrc} class="w-full" />
   </div>
-  <div class="flex flex-col xl:col-span-2 gap-2 p-4">
+  <div
+    class="flex relative h-full justify-center bg-zinc-800 flex-col xl:col-span-2 gap-2 p-4"
+  >
     <h2 class="text-4xl text-stone-300">{title}</h2>
     <p class="text-2xl text-stone-300">{stack}</p>
-    <div class="border-2 flex gap-3">
+    <div class="flex gap-3">
       <a
         href={github}
-        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-600 text-white hover:bg-purple-800 focus:ring-purple-600 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Repo
       </a>
       <a
         href={link}
-        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-600 text-white hover:bg-purple-800 focus:ring-purple-600 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Live
       </a>
       <a
         href="/contact"
-        class="bg-purple-500 text-white hover:bg-purple-400 focus:ring-purple-500 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
+        class="bg-purple-600 text-white hover:bg-purple-800 focus:ring-purple-600 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Details
       </a>
