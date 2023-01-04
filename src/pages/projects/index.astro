@@ -11,6 +11,7 @@ const projects = [
     github: "https://github.com/donovangomez/fighting-game-resources",
     imgSrc: "/assets/itechedthat.webp",
     stack: "NextJS / TailwindCSS / Supabase / Next Auth",
+    description: "Fighting game resource hub with user submitted content.",
   },
   {
     id: 2,
@@ -19,6 +20,8 @@ const projects = [
     imgSrc: "/assets/genshin-handbook.webp",
     github: "https://github.com/donovangomez/fighting-game-resources",
     stack: "NextJS / Chakra UI / Supabase",
+    description:
+      "Genshin Impact companion app with the purpose of seeing farmable characters each day",
   },
   {
     id: 3,
@@ -27,6 +30,8 @@ const projects = [
     imgSrc: "/assets/sal.webp",
     github: "https://github.com/donovangomez/fighting-game-resources",
     stack: "HTML / SCSS",
+    description:
+      "Website for Saliou. An up and coming musician from Venice, CA.",
     slug: "projects/saliou",
   },
 ];
@@ -49,6 +54,7 @@ const projects = [
               stack={project.stack}
               github={project.github}
               imgSrc={project.imgSrc}
+              description={project.description}
             />
           ))
         }

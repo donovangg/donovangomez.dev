@@ -1,5 +1,5 @@
 ---
-const { title, link, github, imgSrc, stack } = Astro.props;
+const { title, link, github, imgSrc, stack, description } = Astro.props;
 ---
 
 <div
@@ -17,6 +17,7 @@ const { title, link, github, imgSrc, stack } = Astro.props;
   >
     <h2 class="text-4xl text-stone-300">{title}</h2>
     <p class="text-2xl text-stone-300">{stack}</p>
+    <p class="text-xl text-stone-300">{description}</p>
     <div class="flex gap-3">
       <a
         href={github}
