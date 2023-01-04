@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+    return [
+        {params: {project: "griddy"}},
+        {params: {project: "uwu-thing"}}
+    ]
+}
+
+const {project} = Astro.params;
+---
+<Layout>
+    <h1>My project {project}</h1>
+</Layout>
