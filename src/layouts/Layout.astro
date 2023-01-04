@@ -1,6 +1,5 @@
 ---
 import Header from "../components/Header.astro";
-import Wrapper from "../components/Wrapper.astro";
 export interface Props {
   title?: string;
 }
@@ -24,7 +23,6 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="overflow-x-hidden">
-    <Wrapper />
     <Header />
     <main id="swup" class="transition-fade">
       <slot />
