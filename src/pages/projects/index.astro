@@ -1,7 +1,7 @@
 ---
 import ProjectCard from "../../components/ProjectCard.astro";
 import Layout from "../../layouts/Layout.astro";
-const allProjects = await Astro.glob('./*.md');
+// const projects = await Astro.glob("./*.md");
 
 const projects = [
   {
@@ -27,6 +27,7 @@ const projects = [
     imgSrc: "/assets/sal.webp",
     github: "https://github.com/donovangomez/fighting-game-resources",
     stack: "HTML / SCSS",
+    slug: "projects/saliou",
   },
 ];
 ---
@@ -53,11 +54,5 @@ const projects = [
         }
       </div>
     </div>
-    <section>
-        <h2>Is this working</h2>
-        {allProjects.map((project) => (
-            <h2>{project.frontmatter.title}</h2>
-        ))}
-    </section>
   </main>
 </Layout>
