@@ -1,4 +1,5 @@
 ---
+id: 1
 title: 'iTechedThat'
 description: 'This is the first post of my new Astro blog.'
 link: 'https://adventurerhandbook-alpha.netlify.app/'
