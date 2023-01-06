@@ -1,5 +1,6 @@
 ---
 id: 1
+datePublished: '3'
 title: "Saliou Mboup"
 description: "This is the first post of my new Astro blog."
 link: "https://adventurerhandbook-alpha.netlify.app/"

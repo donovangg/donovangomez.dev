@@ -1,5 +1,6 @@
 ---
 id: 2
+datePublished: 1
 title: 'Adventurer Handbook'
 link: 'https://adventurerhandbook-alpha.netlify.app/'
 imgSrc: '/assets/genshin-handbook.webp'
