@@ -2,6 +2,7 @@
 layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 2
 title: "Adventurer Handbook"
+slug: "adventurer-handbook"
 link: "https://adventurerhandbook-alpha.netlify.app/"
 imgSrc: "/assets/genshin-handbook.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"

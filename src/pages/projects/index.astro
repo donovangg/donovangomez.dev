@@ -12,6 +12,7 @@ const projects = [
     imgSrc: "/assets/itechedthat.webp",
     stack: "NextJS / TailwindCSS / Supabase / Next Auth",
     description: "Fighting game resource hub with user submitted content.",
+    slug: "projects/itechedthat",
   },
   {
     id: 2,
@@ -22,7 +23,9 @@ const projects = [
     stack: "NextJS / Chakra UI / Supabase",
     description:
       "Genshin Impact companion app with the purpose of seeing farmable characters each day",
+    slug: "projects/adventurer-handbook",
   },
+
   {
     id: 3,
     title: "Saliou Mboup",
@@ -55,6 +58,7 @@ const projects = [
               github={project.github}
               imgSrc={project.imgSrc}
               description={project.description}
+              slug={project.slug}
             />
           ))
         }
