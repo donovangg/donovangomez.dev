@@ -1,13 +1,13 @@
 ---
-id: 3
-title: 'My First Blog Post'
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
-image:
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
-    alt: 'The Astro logo with the word One.'
-tags: ["astro", "blogging", "learning in public"]
+id: 1
+title: "Saliou Mboup"
+description: "This is the first post of my new Astro blog."
+link: "https://adventurerhandbook-alpha.netlify.app/"
+imgSrc: "/assets/sal.webp"
+github: "https://github.com/donovangomez/fighting-game-resources"
+stack: "NextJS / Chakra UI / Supabase"
 ---
+
 # My First Blog Post
 
 Published on: 2022-07-01
