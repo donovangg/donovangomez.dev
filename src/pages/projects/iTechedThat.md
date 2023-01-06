@@ -1,4 +1,5 @@
 ---
+layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 1
 title: "iTechedThat"
 description: "This is the first post of my new Astro blog."
