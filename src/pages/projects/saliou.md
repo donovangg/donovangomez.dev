@@ -1,9 +1,11 @@
 ---
+layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 1
 datePublished: '3'
 title: "Saliou Mboup"
 description: "This is the first post of my new Astro blog."
 link: "https://adventurerhandbook-alpha.netlify.app/"
+slug: "saliou"
 imgSrc: "/assets/sal.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"
 stack: "NextJS / Chakra UI / Supabase"

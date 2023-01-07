@@ -1,8 +1,10 @@
 ---
+layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 1
 datePublished: 12321312
 title: "iTechedThat"
 description: "This is the first post of my new Astro blog."
+slug: "itechedthat"
 link: "https://adventurerhandbook-alpha.netlify.app/"
 imgSrc: "/assets/itechedthat.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"

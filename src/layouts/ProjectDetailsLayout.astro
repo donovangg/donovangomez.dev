@@ -1,10 +1,17 @@
 ---
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+console.log(frontmatter);
+
+const { title, stack, link, github } = frontmatter;
 ---
 
 <Layout>
-  <header>
-    <h1>Biscuits</h1>
-  </header>
+  <div>
+    <h1 class="text-4xl">{title}</h1>
+    <p>{stack}</p>
+    <a href={link}>Live Link</a>
+    <a href={github}>Repo</a>
+  </div>
+  <slot />
 </Layout>
