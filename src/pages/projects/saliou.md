@@ -9,10 +9,8 @@ github: "https://github.com/donovangomez/fighting-game-resources"
 stack: "NextJS / Chakra UI / Supabase"
 ---
 
-# My First Blog Post
+# Saliou MBoup Website
+Static website for musician in Venice.
 
-Published on: 2022-07-01
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-
-## What I've accomplished
+## Project Inspiration
+Sal is an awesome friend of mine and has been writing awesome music the past few years. He started to be more active on social media promoting his EP and a website is another good way to bolster his online presence.
