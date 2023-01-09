@@ -1,5 +1,6 @@
 ---
-const { title, link, github, imgSrc, stack, description, slug } = Astro.props;
+const { title, link, github, imgSrc, stack, description, slug, url } =
+  Astro.props;
 ---
 
 <div
@@ -36,7 +37,7 @@ const { title, link, github, imgSrc, stack, description, slug } = Astro.props;
         Live
       </a>
       <a
-        href={slug}
+        href={url}
         class="bg-purple-600 text-white hover:bg-purple-800 focus:ring-purple-600 focus:ring-opacity-50 active:bg-purple-600 inline-block px-5 py-3 rounded-md focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base;"
       >
         Details
