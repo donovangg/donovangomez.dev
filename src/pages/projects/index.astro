@@ -1,44 +1,7 @@
 ---
 import ProjectCard from "../../components/ProjectCard.astro";
 import Layout from "../../layouts/Layout.astro";
-const allProjects = await Astro.glob("./*.mdx");
 
-const projects = [
-  {
-    id: 1,
-    title: "iTechedThat",
-    link: "https://www.itechedthat.com/",
-    github: "https://github.com/donovangomez/fighting-game-resources",
-    imgSrc: "/assets/itechedthat.webp",
-    stack: "NextJS / TailwindCSS / Supabase / Next Auth",
-    description: "Fighting game resource hub with user submitted content.",
-    slug: "projects/itechedthat",
-  },
-  {
-    id: 2,
-    title: "Adventurer Handbook",
-    link: "https://adventurerhandbook-alpha.netlify.app/",
-    imgSrc: "/assets/genshin-handbook.webp",
-    github: "https://github.com/donovangomez/fighting-game-resources",
-    stack: "NextJS / Chakra UI / Supabase",
-    description:
-      "Genshin Impact companion app with the purpose of seeing farmable characters each day",
-    slug: "projects/adventurer-handbook",
-  },
-
-  {
-    id: 3,
-    title: "Saliou Mboup",
-    link: "https://salioumboup.com/",
-    imgSrc: "/assets/sal.webp",
-    github: "https://github.com/donovangomez/fighting-game-resources",
-    stack: "HTML / SCSS",
-    description:
-      "Website for Saliou. An up and coming musician from Venice, CA.",
-    slug: "projects/saliou",
-  },
-];
-console.log(allProjects);
 ---
 
 <Layout>
@@ -50,7 +13,7 @@ console.log(allProjects);
     </h1>
     <div class="min-h-screen w-5/6 mx-auto">
       <div class="flex flex-wrap justify-center gap-4">
-        {
+        <!-- {
           allProjects.map((project) => (
             <ProjectCard
               title={project.frontmatter.title}
@@ -63,7 +26,7 @@ console.log(allProjects);
               url={project.url}
             />
           ))
-        }
+        } -->
       </div>
     </div>
   </main>
