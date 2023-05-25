@@ -5,12 +5,12 @@ const projectCollection = defineCollection({
     type: 'content',
     schema: z.object({
         id: z.number(),
+        datePublished: z.date(),
       title: z.string(),
-      pubDate: z.date(),
+      description: z.string(),
       link: z.string(),
       imgSrc: z.string(),
       github: z.string(),
-      description: z.string(),
       stack: z.string(),
     })
 });

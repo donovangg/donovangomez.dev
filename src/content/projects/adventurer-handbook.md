@@ -1,6 +1,6 @@
 ---
 id: 2
-datePublished: 1
+datePublished: 2022-07-01
 title: "Adventurer Handbook"
 description: "Genshin Impact companion app with the purpose of seeing farmable characters each day"
 link: "https://adventurerhandbook-alpha.netlify.app/"

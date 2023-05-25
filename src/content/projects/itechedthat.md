@@ -1,6 +1,6 @@
 ---
 id: 1
-datePublished: 12321312
+datePublished: 2022-12-01
 title: "iTechedThat"
 description: "Fighting game resource hub with user submitted content."
 link: "https://www.itechedthat.com/"

@@ -1,6 +1,6 @@
 ---
 id: 1
-datePublished: "3"
+datePublished: 2019-07-01
 title: "Saliou Mboup"
 description: "Website for Saliou. An up and coming musician from Venice, CA."
 link: "https://salioumboup.com/"
