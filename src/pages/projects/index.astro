@@ -1,6 +1,9 @@
 ---
+import { getCollection } from "astro:content";
 import ProjectCard from "../../components/ProjectCard.astro";
 import Layout from "../../layouts/Layout.astro";
+
+const allProjects = await getCollection("projects");
 
 ---
 
@@ -13,20 +16,19 @@ import Layout from "../../layouts/Layout.astro";
     </h1>
     <div class="min-h-screen w-5/6 mx-auto">
       <div class="flex flex-wrap justify-center gap-4">
-        <!-- {
+        {
           allProjects.map((project) => (
             <ProjectCard
-              title={project.frontmatter.title}
-              link={project.frontmatter.link}
-              stack={project.frontmatter.stack}
-              github={project.frontmatter.github}
-              imgSrc={project.frontmatter.imgSrc}
-              description={project.frontmatter.description}
-              slug={project.frontmatter.slug}
-              url={project.url}
+              title={project.data.title}
+              link={project.data.link}
+              stack={project.data.stack}
+              github={project.data.github}
+              imgSrc={project.data.imgSrc}
+              description={project.data.description}
+              url={`/projects/${project.slug}`}
             />
           ))
-        } -->
+        }
       </div>
     </div>
   </main>
