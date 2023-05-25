@@ -203,21 +203,21 @@ declare module 'astro:content' {
   slug: "adventurer-handbook";
   body: string;
   collection: "projects";
-  data: any
+  data: InferEntrySchema<"projects">
 } & { render(): Render[".mdx"] };
 "itechedthat.mdx": {
 	id: "itechedthat.mdx";
   slug: "itechedthat";
   body: string;
   collection: "projects";
-  data: any
+  data: InferEntrySchema<"projects">
 } & { render(): Render[".mdx"] };
 "saliou.mdx": {
 	id: "saliou.mdx";
   slug: "/saliou";
   body: string;
   collection: "projects";
-  data: any
+  data: InferEntrySchema<"projects">
 } & { render(): Render[".mdx"] };
 };
 
@@ -229,5 +229,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

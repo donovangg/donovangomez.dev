@@ -1,10 +1,8 @@
 ---
-layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 1
 datePublished: 12321312
 title: "iTechedThat"
 description: "Fighting game resource hub with user submitted content."
-slug: "itechedthat"
 link: "https://www.itechedthat.com/"
 imgSrc: "/assets/itechedthat.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"

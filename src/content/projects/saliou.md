@@ -1,11 +1,9 @@
 ---
-layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 1
 datePublished: "3"
 title: "Saliou Mboup"
 description: "Website for Saliou. An up and coming musician from Venice, CA."
 link: "https://salioumboup.com/"
-slug: "/saliou"
 imgSrc: "/assets/sal.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"
 stack: "HTML5 / SCSS"

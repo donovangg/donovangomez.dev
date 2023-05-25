@@ -1,9 +1,7 @@
 ---
-layout: "../../layouts/ProjectDetailsLayout.astro"
 id: 2
 datePublished: 1
 title: "Adventurer Handbook"
-slug: adventurer-handbook
 description: "Genshin Impact companion app with the purpose of seeing farmable characters each day"
 link: "https://adventurerhandbook-alpha.netlify.app/"
 imgSrc: "/assets/genshin-handbook.webp"
