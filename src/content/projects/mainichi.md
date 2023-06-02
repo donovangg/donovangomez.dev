@@ -1,5 +1,5 @@
 ---
-id: 1
+id: 3
 datePublished: 2023-05-01
 title: "Mainichi"
 description: "Track anime airing daily"
