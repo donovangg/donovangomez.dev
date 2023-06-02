@@ -11,7 +11,7 @@ const projectCollection = defineCollection({
       link: z.string(),
       imgSrc: z.string(),
       github: z.string(),
-      stack: z.string(),
+      stack: z.array(z.object({name: z.string(), logo: z.string()}))
     })
 });
 // Export a single `collections` object to register your collection(s)

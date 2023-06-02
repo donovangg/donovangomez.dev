@@ -17,7 +17,11 @@ const { title, link, github, imgSrc, stack, description, slug, url } =
     class="flex relative h-full justify-center bg-zinc-800 flex-col xl:col-span-2 gap-2 p-4"
   >
     <h2 class="text-4xl text-stone-300">{title}</h2>
-    <p class="text-2xl text-stone-300">{stack}</p>
+    <div class="flex gap-2">
+      {stack.map((s) => (
+        <img width={32} src={s.logo} alt={s.name} />
+      ))}
+    </div>
     <p class="text-xl text-stone-300">{description}</p>
     <div class="flex gap-3">
       <a

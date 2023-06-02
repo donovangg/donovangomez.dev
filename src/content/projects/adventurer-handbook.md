@@ -6,7 +6,16 @@ description: "Genshin Impact companion app with the purpose of seeing farmable c
 link: "https://adventurerhandbook-alpha.netlify.app/"
 imgSrc: "/assets/genshin-handbook.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"
-stack: "NextJS / Chakra UI / Supabase"
+stack: [
+  {
+    name: "NextJS",
+    logo: "/assets/nextjs-logo.svg"
+  },
+  {
+    name: "TailwindCSS",
+    logo: "/assets/tailwind-logo.svg"
+  }
+]
 ---
 
 <h1 class="text-5xl mt-14">Adventurer Handbook</h1>

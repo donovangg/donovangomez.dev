@@ -1,21 +1,17 @@
 ---
 id: 1
-datePublished: 2019-07-01
-title: "Saliou Mboup"
-description: "Website for Saliou. An up and coming musician from Venice, CA."
-link: "https://salioumboup.com/"
-imgSrc: "/assets/sal.webp"
-github: "https://github.com/donovangomez/fighting-game-resources"
-stack: [
-  {
-    name: "NextJS",
-    logo: "/assets/nextjs-logo.svg"
-  },
-  {
-    name: "TailwindCSS",
-    logo: "/assets/tailwind-logo.svg"
-  }
-]
+datePublished: 2023-05-01
+title: "Mainichi"
+description: "Track anime airing daily"
+link: "https://mainichi-anime.vercel.app/"
+imgSrc: "/assets/mainichi.png"
+github: "https://github.com/donovangomez/mainichi"
+stack:
+  [
+    { name: "NextJS", logo: "/assets/nextjs-logo.svg" },
+    { name: "TailwindCSS", logo: "/assets/tailwind-logo.svg" },
+    { name: "Firebase", logo: "/assets/firebase-logo.svg" },
+  ]
 ---
 
 <h1 class="text-5xl mt-14">Saliou MBoup Website</h1>

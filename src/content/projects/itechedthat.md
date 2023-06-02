@@ -6,8 +6,19 @@ description: "Fighting game resource hub with user submitted content."
 link: "https://www.itechedthat.com/"
 imgSrc: "/assets/itechedthat.webp"
 github: "https://github.com/donovangomez/fighting-game-resources"
-stack: "NextJS / Tailwind / Supabase / Next Auth"
+stack: [
+  {
+    name: "NextJS",
+    logo: "/assets/nextjs-logo.svg"
+  },
+  {
+    name: "TailwindCSS",
+    logo: "/assets/tailwind-logo.svg"
+  }
+]
 ---
+
+
 
 <h1 class="text-5xl mt-14">iTechedThat</h1>
 
