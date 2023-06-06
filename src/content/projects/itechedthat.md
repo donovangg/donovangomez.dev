@@ -36,10 +36,12 @@ stack: [
   be cool if there was a single site for some cool stuff to check out.{" "}
 </p>
 
-<h2 class="text-3xl my-4">Tech stack</h2>
+<h2 class="text-4xl my-4">Tech stack</h2>
 
+<h3 class="text-3xl">NextJS</h3>
 <p class="text-xl my-4">
-  I really enjoyed using file based routing with Next, styling with Tailwind and
-  Supabase to get up and running for my backend. Next Auth takes care of the
-  Google Auth and the Form that users submit goes to Formspree.
+ This is one of my first projects with NextJS. It comes with a lot of cool things that regular Create React App doesn&#39;t have. Routing and SSR are already in Next. Though with how basic CRA is you can npm install your own package to solve the problems you have. It gave the dev freedom of choice which after watching Honeypot&#39;s React documentary, was the main goal. Next however just gave you everything, which for me is extremely helpful.
 </p>
+
+<h3 class="text-3xl">TailwindCSS</h3>
+<p>Tailwind seems to cause a lot of arguments on tech Twitter for one reason or another. I messed around with other frameworks in the past like Bootstrap, Material and even Chakra UI. What I found interesting is that Tailwind actually doesn&#39;t have a design system. You can write your own styles and make things really look how you want things to look. There is this <a class="text-purple-600 hover:text-purple-400 transition-all duration-75"  href="https://youtu.be/CQuTF-bkOgc" target="_blank" rel="noreferrer">video</a> by Theo and Ping.gg which goes over this. At the end of it all it feels a lot closer to writing CSS compared to frameworks with a heavy design system.</p>
