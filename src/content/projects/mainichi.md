@@ -14,7 +14,7 @@ stack:
   ]
 ---
 
-<section class="border-2 border-green-600 md:flex">
+<section class="md:flex">
 <div>
 <h1 class="text-5xl mt-14">Mainichi</h1>
 <p class="text-xl my-4">Track what anime is airing in Japan. Keep track of what you're watching this season.</p>
