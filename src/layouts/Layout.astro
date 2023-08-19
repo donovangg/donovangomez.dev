@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
-import Footer from '../components/Footer.astro'
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 export interface Props {
   title?: string;
 }
@@ -21,25 +22,14 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon.webp" />
+    <ViewTransitions />
     <title>{title}</title>
   </head>
   <body class="overflow-x-hidden">
     <Header />
-    <main id="swup" class="transition-fade">
+    <main>
       <slot />
     </main>
     <Footer />
-    <script src="../js/script.js"></script>
   </body>
 </html>
-
-<style>
-  .transition-fade {
-    transition: 0.4s;
-    opacity: 1;
-  }
-
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
-</style>
