@@ -1,6 +1,4 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 export interface Props {
   title?: string;
@@ -10,7 +8,7 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,11 +23,9 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
     <ViewTransitions />
     <title>{title}</title>
   </head>
-  <body class="overflow-x-hidden">
-    <Header />
+  <body>
     <main>
       <slot />
     </main>
-    <Footer />
   </body>
 </html>
