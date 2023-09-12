@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
 
 const allProjects = await getCollection("projects");
 
@@ -16,5 +17,20 @@ const sortedProjects = allProjects.sort(
     >
       Projects
     </h1>
+    <div class="flex flex-wrap justify-center gap-4">
+      {
+        sortedProjects.map((project) => (
+          <ProjectCard
+            title={project.data.title}
+            link={project.data.link}
+            stack={project.data.stack}
+            github={project.data.github}
+            imgSrc={project.data.imgSrc}
+            description={project.data.description}
+            url={`/projects/${project.slug}`}
+          />
+        ))
+      }
+    </div>
   </main>
 </Layout>
