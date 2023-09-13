@@ -1,7 +1,7 @@
 ---
 ---
 
-<nav class="navbar bg-base-100">
+<nav class="navbar w-10/12 mx-auto bg-base-100">
   <div class="navbar-start">
     <div class="dropdown">
       <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -51,10 +51,10 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <button
-      class="btn"
-      data-toggle-theme="light,dracula"
-      data-act-class="ACTIVECLASS">Uwu</button
-    >
+    <select data-choose-theme class="select select-secondary max-w-xs">
+      <option disabled selected value="">Theme</option>
+      <option value="light">Default</option>
+      <option value="dracula">Dark</option>
+    </select>
   </div>
 </nav>
