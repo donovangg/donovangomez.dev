@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { ViewTransitions } from "astro:transitions";
 export interface Props {
   title?: string;
 }
@@ -10,7 +9,7 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,15 +20,31 @@ const { title = "Donovan Gomez | Web developer" } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <script is:inline>
+      // ☝️ This script prevent the FART effect.
+      if (localStorage.getItem("theme") === null) {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else
+        document.documentElement.setAttribute(
+          "data-theme",
+          localStorage.getItem("theme")
+        );
+      // "theme" LocalStorage value is set by the package to remember user preference.
+      // The value is checked and applyed before rendering anything.
+    </script>
+    <script>
+      import { themeChange } from "theme-change";
+      themeChange();
+      // 👆 you could import the CDN directly instead of these two lines
+    </script>
     <link rel="icon" href="/favicon.webp" />
-    <ViewTransitions />
     <title>{title}</title>
   </head>
-  <body class="overflow-x-hidden">
-    <Header />
+  <body>
     <main>
+      <Header />
       <slot />
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>

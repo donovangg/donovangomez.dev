@@ -1,35 +1,47 @@
 ---
 ---
 
-<nav class="relative flex pt-2 mx-auto w-5/6 text-sm font-medium text-stone-50">
-  <ul
-    class="w-full relative items-center mx-auto grid grid-cols-4 md:w-full lg:w-full"
-  >
-    <ul class="hidden md:flex md:gap-6 md:justify-start md:items-center">
-      <li class="md:justify-center md:items-center md:flex">
-        <a class="text-2xl hover:text-violet-500 transition duration-75" href="/">
-          {'<donovan />'}
-        </a>
-      </li>
+<nav class="navbar w-10/12 mx-auto bg-base-100">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"></path></svg
+        >
+      </label>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+      >
+        <li><a href="/about" class="border-2">About</a></li>
+
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <a href="/" class="btn btn-ghost normal-case text-xl">.donovan</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a class="text-xl" href="/projects">Projects</a></li>
+      <li><a class="text-xl" href="/about">About</a></li>
+      <li><a class="text-xl" href="/contact">Contact</a></li>
     </ul>
-    <ul
-      class="flex w-[22.55rem] justify-center md:flex md:col-span-3 md:justify-end md:w-full gap-6"
-    >
-      <li
-        class="flex justify-center text-xl items-center hover:text-violet-500 transition duration-75"
-      >
-        <a href="/projects">Projects</a>
-      </li>
-      <li
-        class="flex justify-center text-xl items-center hover:text-violet-500 transition duration-75"
-      >
-        <a href="/about">About</a>
-      </li>
-      <li
-        class="flex justify-center text-xl items-center hover:text-violet-500 transition duration-75"
-      >
-        <a href="/contact">Contact</a>
-      </li>
-    </ul>
-  </ul>
+  </div>
+  <div class="navbar-end">
+    <select data-choose-theme class="select select-primary max-w-xs">
+      <option disabled selected value="">Theme</option>
+      <option value="light">Default</option>
+      <option value="dracula">Dark</option>
+    </select>
+  </div>
 </nav>
