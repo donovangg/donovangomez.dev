@@ -1,0 +1,58 @@
+---
+---
+
+<form
+  action="https://formspree.io/f/xpzezlnl"
+  method="POST"
+  class="w-11/12 rounded-lg mx-auto"
+>
+  <div class="mb-6">
+    <div class="form-control w-full">
+      <label class="label">
+        <span class="label-text-alt">Your name:</span>
+      </label>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        required
+        minlength="3"
+        maxlength="30"
+        placeholder="Type here"
+        class="input input-bordered input-primary w-full"
+      />
+    </div>
+    <div class="form-control w-ful">
+      <label class="label">
+        <span class="label-text-alt">Email:</span>
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        minlength="3"
+        maxlength="30"
+        placeholder="Type here"
+        class="input input-bordered w-full input-primary"
+      />
+    </div>
+    <div class="w-full">
+      <label for="message" class="block mb-2 text-sm font-medium my-4"
+        >Your message</label
+      >
+      <textarea
+        class="textarea textarea-primary w-full"
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Bio"></textarea>
+    </div>
+    <button
+      type="submit"
+      class="text-white bg-purple-600 hover:bg-purple-400 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+    >
+      Submit
+    </button>
+  </div>
+</form>

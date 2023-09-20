@@ -190,7 +190,16 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"projects": {
+		"blog": {
+"conditional-rendering-in-react-and-vue.md": {
+	id: "conditional-rendering-in-react-and-vue.md";
+  slug: "conditional-rendering-in-react-and-vue";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+};
+"projects": {
 "itechedthat.md": {
 	id: "itechedthat.md";
   slug: "itechedthat";
