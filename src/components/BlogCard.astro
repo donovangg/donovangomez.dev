@@ -1,10 +1,11 @@
 ---
-const { title, imgSrc, description, date} =
+const { title, imgSrc, description, date, url} =
   Astro.props;
 
   import {formatDate} from '../js/utils'
 
 ---
+<a href={url}>
 <div class="card w-96 bg-base-100 shadow-xl">
     <figure><img src={imgSrc} alt={title} /></figure>
     <div class="card-body">
@@ -18,3 +19,4 @@ const { title, imgSrc, description, date} =
       </div>
     </div>
   </div>
+  </a>

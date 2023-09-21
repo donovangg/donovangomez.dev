@@ -19,12 +19,13 @@ const sortedBlogPosts = allBlogPosts.sort(
     </h1>
     <div class="flex flex-wrap justify-center gap-4">
       {
-        sortedBlogPosts.map((project) => (
+        sortedBlogPosts.map((blog) => (
           <BlogCard
-          title={project.data.title}  
-            imgSrc={project.data.imgSrc}
-            description={project.data.description}
-            date={project.data.date}
+          title={blog.data.title}  
+            imgSrc={blog.data.imgSrc}
+            description={blog.data.description}
+            date={blog.data.date}
+            url={`/blog/${blog.slug}`}
           />
         ))
       }
