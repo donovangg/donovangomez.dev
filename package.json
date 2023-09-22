@@ -1,5 +1,5 @@
 {
-  "name": "Donovan Portfolio",
+  "name": "Donovans Portfolio",
   "type": "module",
   "version": "1.1.0",
   "private": true,
@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^0.14.0",
-    "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^3.1.1",
     "tailwindcss": "^3.2.4",
