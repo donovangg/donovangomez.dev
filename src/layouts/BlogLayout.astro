@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { formatDate } from "../lib/utils";
+
+const { frontmatter } = Astro.props;
+
+const { title, date, imgSrc, description } = frontmatter;
+---
+
+<Layout>
+  <section class="min-h-screen w-10/12 border-2 border-green-500 mx-auto lg:w-3/5 lg:border-4 lg:border-orange-600">
+    <div class="lg: text-center">
+        <h1
+        class="text-6xl pt-32 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent font-black"
+      >
+        {title}
+      </h1>
+      <p class="text-2xl my-6">{formatDate(date)}</p>
+     <div class="flex justify-center">
+        <img src={imgSrc} alt={title}/>
+     </div>
+     <p class="text-xl">{description}</p>
+    </div>
+
+    <section>
+      <slot />
+    </section>
+  </section>
+</Layout>
