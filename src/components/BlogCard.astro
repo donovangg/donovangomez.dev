@@ -5,7 +5,7 @@ const { title, imgSrc, description, date, url} =
 import { formatDate } from '../lib/utils'
 ---
 <a href={url}>
-<div class="card w-96 bg-base-100 shadow-xl">
+<article class="card w-96 bg-base-100 shadow-xl">
     <figure><img src={imgSrc} alt={title} /></figure>
     <div class="card-body">
       <h2 class="card-title">
@@ -17,5 +17,5 @@ import { formatDate } from '../lib/utils'
         <div class="badge badge-outline">JavaScript</div> 
       </div>
     </div>
-  </div>
+  </article>
   </a>

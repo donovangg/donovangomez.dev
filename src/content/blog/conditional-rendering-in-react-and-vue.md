@@ -13,7 +13,7 @@ I wanted to learn how to add functionality with both Vue and React. Rendering el
 
 If you've worked with JavaScript you most likely will be familiar with [ternary operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator) and `if` statements. Rendering things in React looks like JavaScript, probably because it is JavaScript lol.
 
-```react
+```javascript
 function App() {
   const isSandwich = true;
 
