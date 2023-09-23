@@ -9,10 +9,10 @@ const { title, date, imgSrc, description } = frontmatter;
 ---
 
 <Layout>
-  <section class="min-h-screen w-10/12 border-2 border-green-500 mx-auto lg:w-3/5 lg:border-4 lg:border-orange-600">
+  <section class="min-h-screen w-10/12 mx-auto lg:w-3/5">
     <div class="lg: text-center">
         <h1
-        class="text-6xl pt-32 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent font-black"
+        class="lg:text-6xl md:text-5xl text-4xl pt-32 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 bg-clip-text text-transparent font-black"
       >
         {title}
       </h1>
@@ -20,11 +20,11 @@ const { title, date, imgSrc, description } = frontmatter;
      <div class="flex justify-center">
         <img src={imgSrc} alt={title}/>
      </div>
-     <p class="text-xl">{description}</p>
+     <p class="text-xl mb-6">{description}</p>
     </div>
 
-    <section>
+    <arcticle class="prose prose-stone prose-xl">
       <slot />
-    </section>
+    </article>
   </section>
 </Layout>
