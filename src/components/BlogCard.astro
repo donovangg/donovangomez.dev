@@ -1,0 +1,21 @@
+---
+const { title, imgSrc, description, date, url} =
+  Astro.props;
+
+import { formatDate } from '../lib/utils'
+---
+<a href={url}>
+<div class="card w-96 bg-base-100 shadow-xl">
+    <figure><img src={imgSrc} alt={title} /></figure>
+    <div class="card-body">
+      <h2 class="card-title">
+        {title}
+      </h2>
+      <p>{formatDate(date)}</p>
+      <p>{description}</p>
+      <div class="card-actions justify-end">
+        <div class="badge badge-outline">JavaScript</div> 
+      </div>
+    </div>
+  </div>
+  </a>

@@ -1,13 +1,13 @@
 ---
-// import { getCollection } from "astro:content";
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import ProjectCard from "../../components/ProjectCard.astro";
+import BlogCard from '../../components/BlogCard.astro'
 
-// const allProjects = await getCollection("projects");
+const allBlogPosts = await getCollection("blog");
 
-// const sortedProjects = allProjects.sort(
-//   (a, b) => Number(b.data.datePublished) - Number(a.data.datePublished)
-// );
+const sortedBlogPosts = allBlogPosts.sort(
+  (a, b) => Number(b.data.date) - Number(a.data.date)
+);
 ---
 
 <Layout>
@@ -18,20 +18,17 @@ import ProjectCard from "../../components/ProjectCard.astro";
       Blog
     </h1>
     <div class="flex flex-wrap justify-center gap-4">
-      biscuits
-      <!-- {
-        sortedProjects.map((project) => (
-          <ProjectCard
-            title={project.data.title}
-            link={project.data.link}
-            stack={project.data.stack}
-            github={project.data.github}
-            imgSrc={project.data.imgSrc}
-            description={project.data.description}
-            url={`/projects/${project.slug}`}
+      {
+        sortedBlogPosts.map((blog) => (
+          <BlogCard
+          title={blog.data.title}  
+            imgSrc={blog.data.imgSrc}
+            description={blog.data.description}
+            date={blog.data.date}
+            url={`/blog/${blog.slug}`}
           />
         ))
-      } -->
+      }
     </div>
   </section>
 </Layout>
