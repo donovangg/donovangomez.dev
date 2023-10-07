@@ -19,7 +19,7 @@ stack:
 <h1 class="text-5xl mt-14">Mainichi</h1>
 <p class="text-xl my-4">Track what anime is airing in Japan. Keep track of what you're watching this season.</p>
 </div>
-<div>
+<div class="pl-4">
   <img src="/assets/mainichi.png" />
 </div>
 </section>
