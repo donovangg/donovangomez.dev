@@ -5,7 +5,7 @@ title: "Saliou Mboup"
 description: "Website for Saliou. An up and coming musician from Venice, CA."
 link: "https://salioumboup.com/"
 imgSrc: "/assets/sal.webp"
-github: "https://github.com/donovangomez/fighting-game-resources"
+github: "https://github.com/hellodonovan/fighting-game-resources"
 stack: [
   {
     name: "NextJS",

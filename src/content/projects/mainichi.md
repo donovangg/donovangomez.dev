@@ -5,7 +5,7 @@ title: "Mainichi"
 description: "Track anime airing daily"
 link: "https://mainichi-anime.vercel.app/"
 imgSrc: "/assets/mainichi.png"
-github: "https://github.com/donovangomez/mainichi"
+github: "https://github.com/hellodonovan/mainichi"
 stack:
   [
     { name: "NextJS", logo: "/assets/nextjs-logo.svg" },

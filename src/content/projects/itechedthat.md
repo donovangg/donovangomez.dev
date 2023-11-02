@@ -5,7 +5,7 @@ title: "iTechedThat"
 description: "Fighting game resource hub with user submitted content."
 link: "https://www.itechedthat.com/"
 imgSrc: "/assets/itechedthat.webp"
-github: "https://github.com/donovangomez/fighting-game-resources"
+github: "https://github.com/hellodonovan/fighting-game-resources"
 stack: [
   {
     name: "NextJS",
